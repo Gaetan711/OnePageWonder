@@ -1,7 +1,79 @@
-nav{
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    flex-wrap: wrap;
 }
-ul{
-    list-style: none;
-    text-align: right;
+
+body{
+    font-size: 16px;
+    margin: 0; /*marge exterieur*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    width: 60%; /* Width applique une marge exterieur */
+    margin: auto; /* Margin auto permet d'appliquer une marge exterieur seulement si une largeur "whidth" est mise en place */
+
+}
+
+/* Barre de navigation*/
+nav{
+    background-color: black; /*fond du bloc en noir"*/
+    text-transform: uppercase; /* Mise en Capitale de la police"*/
+}
+
+nav .container{
+    display: flex; 
+    justify-content: space-between; /*  Décale les elements de part et autre*/
+    align-items: center; /* centre les liens sur la ligne  verticalement */
+}
+
+nav a{ /*cible uniquement les "a" dans "nav"*/
+    text-decoration: none; /*annule la couleur du lien initial*/
+    color: white; /*ajoute la couleur blanc sur les liens*/
+    font-weight: bold;
+
+}
+
+nav ul{
+    display: flex; /* permet de centrer l'element cote a cote "ul" */
+    list-style: none; /* supprime la liste a puce*/
+    gap: 15px; /* ajoute un ecart entre les liens sign up et Login in */
+}
+
+header{
+    background: linear-gradient(to right,#e71969, #f56306); /* permet de creer un dégradé "vers la droite" */
+    color: white;
+    text-align: center; /*centrer le texte*/
+    padding: 215px 0;  /*marge interne*/
+}
+
+header h1{
+    font-size: 6rem;
+    margin: 0; /* marge de 0 */
+}
+
+header h2{
+    font-size: 4rem;
+    margin: 10px 0 80px 0; /* Attribuer une marge de 10px en haut ...*/
+}
+
+.btn{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #991e5f;
+    padding: 30px 45px; /*30 px haut et bas - 45 px gauche droite*/
+    border-radius: 100px;
+    letter-spacing: 0.2;
+    transition: all 400ms;
+    
+
+}
+/* :hover permet d'enclencher une action au survole de la souris, celle ci sera pris en charge */
+.btn:hover{
+    background-color: #ff2400;
+    transition: all 400ms;   /* transition pour le changement de couleur ( temps recommandé 350ms/400ms*/
+    
+
 }

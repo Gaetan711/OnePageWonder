@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@300;400;500;700&display=swap');
 
-*{
-    flex-wrap: wrap;
-}
-
 body{
     font-size: 16px;
     margin: 0; /*marge exterieur*/
@@ -20,6 +16,11 @@ body{
 nav{
     background-color: black; /*fond du bloc en noir"*/
     text-transform: uppercase; /* Mise en Capitale de la police"*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 nav .container{
@@ -74,6 +75,39 @@ header h2{
 .btn:hover{
     background-color: #ff2400;
     transition: all 400ms;   /* transition pour le changement de couleur ( temps recommandé 350ms/400ms*/
-    
 
 }
+
+/* Main */
+
+
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px; /*ajoute un ecart entre les liens sign up et Login in */
+    margin: 150px 0;
+  
+}
+
+main section img{
+    width: 170px; /* largeur photo*/
+    height: 170px;/* hauteur photo*/
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+main section h3{
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    align-items: center;
+    border-top: 2px solid rgba(128, 128, 128, 0.5);
+
+}
+
